@@ -27,15 +27,16 @@ The AI-Powered Debugging Platform is a web-based observability portal that simpl
 
 
 ## Architecture Diagram
-```mermaid
+
+
 flowchart LR
 
-User[User Queries<br/>(Natural Language)]
-Bedrock[Amazon Bedrock<br/>AI Agent]
+User["User Queries<br/>(Natural Language)"]
+Bedrock["Amazon Bedrock<br/>AI Agent"]
 OpenSearch[Amazon OpenSearch Service]
 DynamoDB[(DynamoDB Database)]
 Kinesis[Amazon Kinesis Firehose]
-Lambda[AWS Lambda<br/>Normalization & Categorisation]
+Lambda["AWS Lambda<br/>Normalization & Categorisation"]
 Services[Logs of All Services]
 Dashboard[Dynamic Dashboards]
 Alerts[Mobile Alerts]
@@ -49,6 +50,7 @@ Dashboard -.-> Alerts
 Services -.-> Kinesis
 Kinesis -.-> Lambda
 Lambda -.-> OpenSearch
+
 
 
 ### High-Level Architecture
@@ -178,5 +180,6 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
 
