@@ -24,6 +24,48 @@ The AI-Powered Debugging Platform is a web-based observability portal that simpl
 
 
 ---
+```
+┌───────────────────────────────────────────────┐
+│              User Query Layer                 │
+│        (Natural Language Input)               │
+└───────────────────────────────────────────────┘
+                       │
+                       ↓
+┌───────────────────────────────────────────────┐
+│               AI Processing Layer             │
+│            (Amazon Bedrock Agent)             │
+└───────────────────────────────────────────────┘
+                       │
+                       ↓
+┌───────────────────────────────────────────────┐
+│              Log Storage Layer                │
+│   (Amazon OpenSearch + DynamoDB Metadata)     │
+└───────────────────────────────────────────────┘
+                       │
+                       ↓
+┌───────────────────────────────────────────────┐
+│           Visualization & Alerts Layer        │
+│      (Dynamic Dashboards + Mobile Alerts)     │
+└───────────────────────────────────────────────┘
+
+
+┌───────────────────────────────────────────────┐
+│            Log Ingestion Pipeline             │
+│        (Logs from All Microservices)          │
+└───────────────────────────────────────────────┘
+                       │
+                       ↓
+┌───────────────────────────────────────────────┐
+│           Streaming & Processing Layer        │
+│   (Kinesis Firehose → AWS Lambda Processing)  │
+└───────────────────────────────────────────────┘
+                       │
+                       ↓
+┌───────────────────────────────────────────────┐
+│              Central Log Storage              │
+│          (Amazon OpenSearch Service)          │
+└───────────────────────────────────────────────┘
+```
 
 
 
@@ -154,6 +196,7 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
 
 
