@@ -172,6 +172,7 @@ By removing the need for manual queries and fragmented dashboards, this platform
 
 ---
 
+
 ## 🔮 Future Scope
 
 - Predictive incident detection  
