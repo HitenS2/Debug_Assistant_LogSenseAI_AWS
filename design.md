@@ -30,40 +30,32 @@ The AI-Powered Debugging Platform is a web-based observability portal that simpl
 
 ## Architecture Diagram
 
+## Architecture Diagram
+
 ```mermaid
 graph TB
-    User[👤 User<br/>Natural Language Queries] -->|Queries| Frontend[💻 Web Frontend<br/>React + TypeScript]
+    User[User - Natural Language Queries] -->|Queries| Frontend[Web Frontend - React]
     
-    Frontend -->|API Requests| Bedrock[🤖 Amazon Bedrock<br/>Intent Extraction & AI]
-    Frontend -->|Query Results| Dashboard[📊 Dynamic Dashboards<br/>Auto-generated based on queries]
+    Frontend -->|API Requests| Bedrock[Amazon Bedrock - AI Processing]
+    Frontend -->|Display| Dashboard[Dynamic Dashboards]
     
-    Bedrock -->|Analyzed Intent| OpenSearch[🔍 Amazon OpenSearch<br/>Log Storage & Search]
+    Bedrock -->|Analyzed Intent| OpenSearch[Amazon OpenSearch - Log Storage]
     
-    Services[🌐 Microservices<br/>Logs of all services] -->|Log Ingestion| Kinesis[📥 Amazon Kinesis Firehose]
+    Services[Microservices - All Service Logs] -->|Log Ingestion| Kinesis[Amazon Kinesis Firehose]
     
-    Kinesis -->|Stream| Lambda[⚡ AWS Lambda<br/>Normalization & Categorization]
+    Kinesis -->|Stream| Lambda[AWS Lambda - Processing]
     
     Lambda -->|Processed Logs| OpenSearch
-    Lambda -->|Metadata| DynamoDB[💾 DynamoDB<br/>Static Details, Queries, Alerts]
+    Lambda -->|Metadata| DynamoDB[DynamoDB - Static Details & Alerts]
     
     OpenSearch -->|Search Results| Bedrock
     DynamoDB -->|Context| Bedrock
     
-    Bedrock -->|Insights & Alerts| Alerts[🔔 Actionable Alerts<br/>Mobile Notifications]
+    Bedrock -->|Insights| Alerts[Actionable Alerts - Mobile Notifications]
     Alerts -->|Notifications| User
     
     Dashboard -.->|Displays| User
-    
-    style User fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
-    style Frontend fill:#50C878,stroke:#2E7D4E,stroke-width:2px,color:#fff
-    style Bedrock fill:#FF6B6B,stroke:#C44545,stroke-width:2px,color:#fff
-    style OpenSearch fill:#9B59B6,stroke:#6C3483,stroke-width:2px,color:#fff
-    style DynamoDB fill:#3498DB,stroke:#21618C,stroke-width:2px,color:#fff
-    style Kinesis fill:#E67E22,stroke:#A04000,stroke-width:2px,color:#fff
-    style Lambda fill:#F39C12,stroke:#B9770E,stroke-width:2px,color:#fff
-    style Services fill:#1ABC9C,stroke:#117A65,stroke-width:2px,color:#fff
-    style Dashboard fill:#E74C3C,stroke:#A93226,stroke-width:2px,color:#fff
-    style Alerts fill:#E91E63,stroke:#AD1457,stroke-width:2px,color:#fff
+
 ```
 
 ### High-Level Architecture
@@ -193,6 +185,7 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
 
 
