@@ -46,7 +46,7 @@ An **AI-driven conversational debugging interface** that:
 The platform transforms observability from **metric-driven monitoring** to **intent-driven investigation**.
 
 ---
-![Architecture Diagram](./Screenshot%20(226).png)
+
 
 
 ## ⭐ Key Features
@@ -76,6 +76,7 @@ Large volumes of logs are condensed into concise explanations for faster underst
 - **Service-Agnostic & Cloud-Native Architecture**  
 
 ---
+![Architecture Diagram](./Screenshot%20(226).png)
 
 ## 🏗️ Architecture Overview
 
