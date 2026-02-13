@@ -27,31 +27,35 @@ The AI-Powered Debugging Platform is a web-based observability portal that simpl
 
 
 ## Architecture Diagram
-
-
+```mermaid
 flowchart LR
+    %% Node Definitions
+    User["User Queries<br/>(Natural Language)"]
+    Bedrock["Amazon Bedrock<br/>AI Agent"]
+    OpenSearch[Amazon OpenSearch Service]
+    DynamoDB[(DynamoDB Database)]
+    Kinesis[Amazon Kinesis Firehose]
+    Lambda["AWS Lambda<br/>Normalization & Categorization"]
+    Services[Logs of All Services]
+    Dashboard[Dynamic Dashboards]
+    Alerts[Mobile Alerts]
 
-User["User Queries<br/>(Natural Language)"]
-Bedrock["Amazon Bedrock<br/>AI Agent"]
-OpenSearch[Amazon OpenSearch Service]
-DynamoDB[(DynamoDB Database)]
-Kinesis[Amazon Kinesis Firehose]
-Lambda["AWS Lambda<br/>Normalization & Categorisation"]
-Services[Logs of All Services]
-Dashboard[Dynamic Dashboards]
-Alerts[Mobile Alerts]
+    %% Connections
+    User -.-> Bedrock
+    Bedrock -.-> OpenSearch
+    Bedrock -.-> DynamoDB
+    OpenSearch -.-> Dashboard
+    Dashboard -.-> Alerts
 
-User -.-> Bedrock
-Bedrock -.-> OpenSearch
-Bedrock -.-> DynamoDB
-OpenSearch -.-> Dashboard
-Dashboard -.-> Alerts
+    Services -.-> Kinesis
+    Kinesis -.-> Lambda
+    Lambda -.-> OpenSearch
 
-Services -.-> Kinesis
-Kinesis -.-> Lambda
-Lambda -.-> OpenSearch
-
-
+    %% Styling (Optional - adds AWS colors)
+    style Bedrock fill:#ff9900,stroke:#232f3e,color:#fff
+    style OpenSearch fill:#00a1c1,stroke:#232f3e,color:#fff
+    style DynamoDB fill:#402770,stroke:#232f3e,color:#fff
+```
 
 ### High-Level Architecture
 
@@ -180,6 +184,7 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
 
 
