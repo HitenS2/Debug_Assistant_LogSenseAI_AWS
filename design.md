@@ -26,34 +26,6 @@ The AI-Powered Debugging Platform is a web-based observability portal that simpl
 ---
 
 
-## Architecture Diagram
-
-## Architecture Diagram
-
-## Architecture Diagram
-
-
-
-
-
-```mermaid
-graph LR
-    A[User Queries] --> B[React Frontend]
-    B --> C[Amazon Bedrock]
-    C --> D[Amazon OpenSearch]
-    
-    E[Microservices Logs] --> F[Kinesis Firehose]
-    F --> G[Lambda Processing]
-    G --> D
-    G --> H[DynamoDB]
-    
-    D --> C
-    H --> C
-    C --> I[Alerts]
-    I --> A
-    C --> J[Dashboards]
-    J --> A
-```
 
 ### High-Level Architecture
 
@@ -182,6 +154,7 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
 
 
