@@ -28,34 +28,43 @@ The AI-Powered Debugging Platform is a web-based observability portal that simpl
 
 ## Architecture Diagram
 
+## Architecture Diagram
+
 ```mermaid
-flowchart LR
-    %% Node Definitions
-    User["User Queries<br/>(Natural Language)"]
-    Bedrock["Amazon Bedrock<br/>AI Agent"]
-    OpenSearch[Amazon OpenSearch Service]
-    DynamoDB[(DynamoDB Database)]
-    Kinesis[Amazon Kinesis Firehose]
-    Lambda["AWS Lambda<br/>Normalization & Categorization"]
-    Services[Logs of All Services]
-    Dashboard[Dynamic Dashboards]
-    Alerts[Mobile Alerts]
+graph TB
+    User[👤 User<br/>Natural Language Queries] -->|Queries| Frontend[💻 Web Frontend<br/>React + TypeScript]
+    
+    Frontend -->|API Requests| Bedrock[🤖 Amazon Bedrock<br/>Intent Extraction & AI]
+    Frontend -->|Query Results| Dashboard[📊 Dynamic Dashboards<br/>Auto-generated based on queries]
+    
+    Bedrock -->|Analyzed Intent| OpenSearch[🔍 Amazon OpenSearch<br/>Log Storage & Search]
+    
+    Services[🌐 Microservices<br/>Logs of all services] -->|Log Ingestion| Kinesis[📥 Amazon Kinesis Firehose]
+    
+    Kinesis -->|Stream| Lambda[⚡ AWS Lambda<br/>Normalization & Categorization]
+    
+    Lambda -->|Processed Logs| OpenSearch
+    Lambda -->|Metadata| DynamoDB[💾 DynamoDB<br/>Static Details, Queries, Alerts]
+    
+    OpenSearch -->|Search Results| Bedrock
+    DynamoDB -->|Context| Bedrock
+    
+    Bedrock -->|Insights & Alerts| Alerts[🔔 Actionable Alerts<br/>Mobile Notifications]
+    Alerts -->|Notifications| User
+    
+    Dashboard -.->|Displays| User
+    
+    style User fill:#4A90E2,stroke:#2E5C8A,stroke-width:2px,color:#fff
+    style Frontend fill:#50C878,stroke:#2E7D4E,stroke-width:2px,color:#fff
+    style Bedrock fill:#FF6B6B,stroke:#C44545,stroke-width:2px,color:#fff
+    style OpenSearch fill:#9B59B6,stroke:#6C3483,stroke-width:2px,color:#fff
+    style DynamoDB fill:#3498DB,stroke:#21618C,stroke-width:2px,color:#fff
+    style Kinesis fill:#E67E22,stroke:#A04000,stroke-width:2px,color:#fff
+    style Lambda fill:#F39C12,stroke:#B9770E,stroke-width:2px,color:#fff
+    style Services fill:#1ABC9C,stroke:#117A65,stroke-width:2px,color:#fff
+    style Dashboard fill:#E74C3C,stroke:#A93226,stroke-width:2px,color:#fff
+    style Alerts fill:#E91E63,stroke:#AD1457,stroke-width:2px,color:#fff
 
-    %% Connections
-    User -.-> Bedrock
-    Bedrock -.-> OpenSearch
-    Bedrock -.-> DynamoDB
-    OpenSearch -.-> Dashboard
-    Dashboard -.-> Alerts
-
-    Services -.-> Kinesis
-    Kinesis -.-> Lambda
-    Lambda -.-> OpenSearch
-
-    %% Styling
-    style Bedrock fill:#ff9900,stroke:#232f3e,color:#fff
-    style OpenSearch fill:#00a1c1,stroke:#232f3e,color:#fff
-    style DynamoDB fill:#402770,stroke:#232f3e,color:#fff
 ```
 
 ### High-Level Architecture
@@ -185,6 +194,7 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
 
 
