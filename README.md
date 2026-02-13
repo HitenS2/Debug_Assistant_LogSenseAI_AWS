@@ -46,6 +46,8 @@ An **AI-driven conversational debugging interface** that:
 The platform transforms observability from **metric-driven monitoring** to **intent-driven investigation**.
 
 ---
+![Architecture Diagram](./Screenshot%20(226).png)
+
 
 ## ⭐ Key Features
 
