@@ -32,7 +32,7 @@ The AI-Powered Debugging Platform is a web-based observability portal that simpl
 
 ## Architecture Diagram
 
-If you want an even simpler version without the dotted line:
+
 
 
 
@@ -182,6 +182,7 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
 
 
