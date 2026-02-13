@@ -64,7 +64,6 @@ graph TB
     style Services fill:#1ABC9C,stroke:#117A65,stroke-width:2px,color:#fff
     style Dashboard fill:#E74C3C,stroke:#A93226,stroke-width:2px,color:#fff
     style Alerts fill:#E91E63,stroke:#AD1457,stroke-width:2px,color:#fff
-
 ```
 
 ### High-Level Architecture
@@ -194,6 +193,7 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
 
 
