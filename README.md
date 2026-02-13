@@ -75,7 +75,7 @@ Large volumes of logs are condensed into concise explanations for faster underst
 
 ---
 
-##🏗️ Architecture Overview
+## 🏗️ Architecture Overview
 **System Workflow**
 
 The platform follows a cloud-native pipeline that combines real-time log ingestion, AI-driven analysis, and dynamic visualization.
