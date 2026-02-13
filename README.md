@@ -190,7 +190,7 @@ By removing the need for manual queries and fragmented dashboards, this platform
 
 **Team Name:** Beff Jezos  
 **Team Leader:** Hiten Sirwani  
-**Team Members**  Hiten Sirwani, Soham Yedgaonkar, Arya Pathak, Atharva Deshpande
+**Team Members** Soham Yedgaonkar, Arya Pathak, Atharva Deshpande, Hiten Sirwani
 
 ---
 
