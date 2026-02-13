@@ -25,9 +25,8 @@ The AI-Powered Debugging Platform is a web-based observability portal that simpl
 
 ---
 
-## Architecture
-## Architecture Diagram
 
+## Architecture Diagram
 ```mermaid
 flowchart LR
 
@@ -50,6 +49,7 @@ Dashboard -.-> Alerts
 Services -.-> Kinesis
 Kinesis -.-> Lambda
 Lambda -.-> OpenSearch
+
 
 ### High-Level Architecture
 
@@ -178,4 +178,5 @@ Supported dashboard types include error analysis, performance metrics, compariso
 ## Summary
 
 The platform delivers an intent-driven debugging experience by combining scalable log ingestion, AI-powered analysis, and autonomous visualization into a unified cloud-native system.
+
 
