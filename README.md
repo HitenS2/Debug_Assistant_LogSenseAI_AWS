@@ -77,6 +77,10 @@ Large volumes of logs are condensed into concise explanations for faster underst
 
 ---
 ![Architecture Diagram](./Screenshot%20(226).png)
+## 🎥 Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/abc123XYZ/maxresdefault.jpg)]([https://youtu.be/abc123XYZ](https://www.youtube.com/watch?v=iJsJKxmkALU))
+
 
 ## 🏗️ Architecture Overview
 
