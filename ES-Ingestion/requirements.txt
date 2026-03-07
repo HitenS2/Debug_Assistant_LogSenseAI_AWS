@@ -1,0 +1,3 @@
+opensearch-py
+aiohttp
+python-dotenv
