@@ -119,8 +119,8 @@ def ask_log_agent(request: StringRequest):
 @app.post("/twilio/send-message")
 def send_twilio_message(request: TwilioMessageRequest):
 
-    account_sid = "AC0863088c8dedc8a3177eda83d501e26f"
-    auth_token = "1655602a0d91446863d5f519f1f9442e"
+   account_sid = "TWILIO_ACCOUNT_SID"
+auth_token = "TWILIO_AUTH_TOKEN"
     from_whatsapp = "whatsapp:+14155238886"
     print("FROM NUMBER:", from_whatsapp)
     print("ACCOUNT SID:", account_sid)
@@ -141,8 +141,8 @@ def send_twilio_message(request: TwilioMessageRequest):
 @app.post("/twilio/make-call")
 def make_twilio_call(request: TwilioCallRequest):
     
-    account_sid = "AC0863088c8dedc8a3177eda83d501e26f"
-    auth_token = "1655602a0d91446863d5f519f1f9442e"
+    account_sid = "TWILIO_ACCOUNT_SID"
+auth_token = "TWILIO_AUTH_TOKEN"
    
 
     client = Client(account_sid, auth_token)
