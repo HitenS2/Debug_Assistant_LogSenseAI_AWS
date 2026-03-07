@@ -7,8 +7,9 @@ def ask_log_agent(prompt, session_id):
 
     # 2. These are the IDs from your AWS Console
     # Find these on the "Agent details" page
-    AGENT_ID = 'GLZOPT9W37' 
-    AGENT_ALIAS_ID = 'TSTALIASID' # Or your specific Alias ID
+    #Masking IDs
+    AGENT_ID = 'GLXXXXXXXXX' 
+    AGENT_ALIAS_ID = 'TSXXXXXXX' # Or your specific Alias ID
 
     # 3. Call the Agent
     response = client.invoke_agent(
