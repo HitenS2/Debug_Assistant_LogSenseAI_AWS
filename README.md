@@ -29,7 +29,7 @@ http://100.48.76.239/
 
 
 
-[![Watch the Demo](https://img.youtube.com/vi/BlwgvIIQssQ/maxresdefault.jpg)](https://youtu.beBlwgvIIQssQ)
+[![Watch the Demo](https://img.youtube.com/vi/BlwgvIIQssQ/maxresdefault.jpg)](https://youtu.be/BlwgvIIQssQ)
 
 ---
 
