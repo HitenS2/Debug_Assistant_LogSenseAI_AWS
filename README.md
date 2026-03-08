@@ -45,7 +45,7 @@ http://100.48.76.239/
 
 ## Dashboard Overview
 
-![Dashboard Screenshot](./screenshots/dashboard.png)
+![Dashboard Screenshot](LAtency.png)
 
 ---
 
@@ -57,19 +57,19 @@ http://100.48.76.239/
 
 ## Alert Monitoring System
 
-![Alerts Screenshot](./screenshots/alerts-dashboard.png)
+![Alerts Screenshot](Alert.png)
 
 ---
 
 ## Log Analysis Interface
 
-![Logs Screenshot](./screenshots/log-analysis.png)
+![Logs Screenshot](LOGSINF.png)
 
 ---
 
 # 🏗️ System Architecture
 
-![Architecture Diagram](./architecture/architecture-diagram.png)
+![Architecture Diagram](Screenshot (226).png)
 
 ---
 
