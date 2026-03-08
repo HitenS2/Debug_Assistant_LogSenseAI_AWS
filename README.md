@@ -222,7 +222,7 @@ Dynamic Insights & Dashboards
 - shadcn-ui
 
 ## Backend
-- Flask
+- FastAPI
 - AWS Lambda
 - API Gateway
 
@@ -239,7 +239,8 @@ Dynamic Insights & Dashboards
 
 ## Deployment
 - AWS Amplify
-
+## Mobile(Call/Mssgs) Alerts System
+- Twilio 
 ---
 
 # 📂 Project Setup
