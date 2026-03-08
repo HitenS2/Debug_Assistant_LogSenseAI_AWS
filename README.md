@@ -18,7 +18,7 @@ Instead of manually searching logs or writing complex queries, developers can si
 🔗 **Project URL**
 
 ```
-https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+[http://100.48.76.239/]
 ```
 
 ---
@@ -37,7 +37,7 @@ https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 
 *(Add your architecture explanation video here)*
 
-[![Watch the Architecture Video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
+[![Watch the Architecture Video](https://img.youtube.com/vi/AtXVfOwmeBE/maxresdefault.jpg)](https://youtu.be/AtXVfOwmeBE)
 
 ---
 
@@ -228,7 +228,6 @@ Dynamic Insights & Dashboards
 
 ## AI & Intelligence
 - Amazon Bedrock
-- Amazon Q
 
 ## Data & Observability
 - Amazon OpenSearch
