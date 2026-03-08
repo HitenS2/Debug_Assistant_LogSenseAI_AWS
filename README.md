@@ -69,7 +69,7 @@ http://100.48.76.239/
 
 # 🏗️ System Architecture
 
-![Architecture Diagram](Screenshot (226).png)
+![Architecture Diagram](Screenshot_226.png)
 
 ---
 
