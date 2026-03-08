@@ -1,288 +1,348 @@
+# 🚀 LogSense AI
+### AI-Powered Observability & Debugging Platform for Distributed Systems
 
-# Welcome to your Lovable project
+![Hackathon](https://img.shields.io/badge/Built%20for-Hackathon-orange)
+![AI Powered](https://img.shields.io/badge/AI-Amazon%20Bedrock-purple)
+![Status](https://img.shields.io/badge/Status-Prototype-success)
 
-## Project info
+LogSense AI is an **AI-powered observability and debugging platform** designed to help developers investigate complex distributed systems using **natural language queries**.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+Instead of manually searching logs or writing complex queries, developers can simply **ask questions about system behavior**, and the platform will automatically analyze logs, identify issues, and generate actionable insights.
 
-## How can I edit this code?
+> ⚡ Transform debugging from **manual investigation → conversational observability**
 
-There are several ways of editing your application.
+---
 
-**Use Lovable**
+# 🌐 Live Project
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+🔗 **Project URL**
 
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```
+https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
 ```
 
-**Edit a file directly in GitHub**
+---
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+# 🎥 Demo Videos
 
-**Use GitHub Codespaces**
+## 🧪 Product Prototype Demo
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+*(Add your product demo video here)*
 
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
-=======
-# AI-Powered Debugging Platform  
-### Intent-Driven Observability for Distributed Systems
-
-## 🚀 Overview
-
-Modern distributed systems generate massive volumes of logs across multiple services, making debugging slow, fragmented, and heavily dependent on manual queries and dashboards.
-
-**This project solves that problem.**
-
-We built an AI-powered observability platform that allows developers and IT teams to debug complex systems using natural language — just by asking questions.
-
-Instead of switching between dashboards or writing complex queries, users can simply ask:
-
-> “At what stage did TRX_A2DC fail?”  
-> “How many DB thread pool errors occurred last week?”  
-
-The system automatically analyzes logs, correlates events across services, generates dynamic dashboards, and identifies root causes.
-
-This solution directly addresses the hackathon challenge of helping people work smarter and become more productive while building or understanding technology.
+[![Watch the Demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
 
 ---
 
-## 🧠 Problem Statement
+## 🏗️ Architecture Explanation Video
 
-Debugging distributed systems today involves:
+*(Add your architecture explanation video here)*
 
-- Jumping across multiple monitoring tools  
-- Writing structured queries (KQL, SQL, etc.)  
-- Manually correlating logs across services  
-- Spending hours identifying root causes  
-
-This slows down teams and delays incident resolution.
+[![Watch the Architecture Video](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
 
 ---
 
-## 💡 Our Solution
+# 📸 Screenshots
 
-An **AI-driven conversational debugging interface** that:
+## Dashboard Overview
 
-- Understands natural language queries
-- Extracts debugging intent
-- Searches and correlates logs automatically
-- Generates dynamic dashboards on demand
-- Provides root cause analysis and fix suggestions
-
-The platform transforms observability from **metric-driven monitoring** to **intent-driven investigation**.
+![Dashboard Screenshot](./screenshots/dashboard.png)
 
 ---
 
+## AI Debugging Chat Interface
 
+![AI Chat Screenshot](./screenshots/chat-interface.png)
 
-## ⭐ Key Features
+---
 
-### 🤖 AI Chat-Based Debugging Assistant
-Interact with system logs through a conversational interface powered by AI.
+## Alert Monitoring System
 
-### 🔍 Root Cause Analysis & Fix Suggestions
-Automatically identifies failure points and suggests actionable remediation steps.
+![Alerts Screenshot](./screenshots/alerts-dashboard.png)
 
-### 📊 Dynamic Log Visualization
-Dashboards are generated automatically based on query context — no manual setup required.
+---
 
-### ⏱️ Time-Based Incident Tracking
-Correlates errors with deployments, configuration changes, or traffic spikes.
+## Log Analysis Interface
+
+![Logs Screenshot](./screenshots/log-analysis.png)
+
+---
+
+# 🏗️ System Architecture
+
+![Architecture Diagram](./architecture/architecture-diagram.png)
+
+---
+
+# 🧠 Problem Statement
+
+Modern distributed systems generate **massive volumes of logs across microservices**, making debugging slow and complicated.
+
+Engineers often need to:
+
+- Switch between multiple monitoring tools  
+- Write complex queries (SQL, KQL, etc.)  
+- Manually correlate logs across services  
+- Spend hours identifying root causes  
+
+This slows down incident response and affects system reliability.
+
+---
+
+# 💡 Our Solution
+
+LogSense AI introduces **Intent-Driven Observability**.
+
+Instead of dashboards and query languages, developers simply **ask questions**.
+
+Example queries:
+
+> “At what stage did transaction TRX_A2DC fail?”  
+> “How many DB thread pool errors occurred last week?”
+
+The system automatically:
+
+1. Understands the query intent  
+2. Searches and correlates relevant logs  
+3. Identifies anomalies and failures  
+4. Generates dashboards dynamically  
+5. Suggests possible fixes  
+
+---
+
+# ⭐ Key Features
+
+### 🤖 AI Chat-Based Debugging
+Interact with system logs through a conversational interface.
+
+### 🔍 Automated Root Cause Analysis
+Detects failure points and provides possible remediation suggestions.
+
+### 📊 Dynamic Dashboard Generation
+Dashboards are automatically generated based on the context of the query.
 
 ### 🧾 Log Summarization
-Large volumes of logs are condensed into concise explanations for faster understanding.
+Large volumes of logs are condensed into clear explanations.
+
+### ⏱️ Incident Timeline Tracking
+Correlates system issues with deployments, configuration changes, or traffic spikes.
+
+### 🚨 Intelligent Alert System
+Monitor system health through customizable alert thresholds.
 
 ---
 
-## 🧬 Unique Selling Proposition
+# 🧬 Unique Selling Proposition
 
-- **Intent-Driven Observability** instead of metric-driven monitoring  
-- **Zero Query Language Dependency**  
-- **Self-Adapting Dashboards per Query**  
-- **Service-Agnostic & Cloud-Native Architecture**  
+LogSense AI introduces a new paradigm called:
+
+## **Intent-Driven Observability**
+
+Key differentiators:
+
+- Natural language debugging
+- No query language required
+- AI-generated dashboards
+- Cross-service log correlation
+- Cloud-native architecture
 
 ---
-![Architecture Diagram](./Screenshot%20(226).png)
-## 🎥 Demo Video
 
-
-
-
-[![Watch the video](https://img.youtube.com/vi/AtXVfOwmeBE/maxresdefault.jpg)](https://youtu.be/AtXVfOwmeBE)
-
-
-
-## 🏗️ Architecture Overview
+# ⚙️ Architecture Overview
 
 ### System Workflow
 
-The platform follows a cloud-native pipeline that combines real-time log ingestion, AI-driven analysis, and dynamic visualization.
+**1️⃣ User Query**
 
-#### 1. User Interaction
-The user submits a natural language debugging query through the web interface. The request is routed to the backend system via API Gateway.
+Developers ask debugging questions through the web interface.
 
-#### 2. Log Ingestion Pipeline
-Logs generated by distributed microservices are continuously streamed into Amazon Kinesis Firehose, enabling scalable and reliable ingestion of high-volume log data.
+**2️⃣ Log Ingestion**
 
-#### 3. Log Processing & Normalization
-Incoming logs are processed by AWS Lambda functions, where they are:
+Logs from distributed services are streamed into:
 
-- Parsed and normalized into a standard schema  
-- Categorized by service, severity, and context  
-- Enriched with metadata such as trace IDs and timestamps  
+Amazon Kinesis Firehose
 
-#### 4. Centralized Log Storage
-Processed logs are indexed into Amazon OpenSearch Service for fast search and analytics, while structured metadata is stored in Amazon DynamoDB for quick lookups and contextual retrieval.
+**3️⃣ Log Processing**
 
-#### 5. AI-Driven Analysis & Intent Processing
-When a query is received, Amazon Bedrock interprets the user’s intent, retrieves relevant logs from OpenSearch, and correlates them using metadata from DynamoDB.
+AWS Lambda processes incoming logs by:
 
-#### 6. Insight Generation & Visualization
-The system analyzes patterns, identifies anomalies, and constructs a dynamic dashboard tailored to the query context, highlighting root causes, timelines, and actionable recommendations.
+- Parsing log structures
+- Normalizing log formats
+- Enriching metadata
+- Categorizing by service and severity
+
+**4️⃣ Log Storage**
+
+Processed logs are stored in:
+
+- Amazon OpenSearch for fast search
+- DynamoDB for metadata indexing
+
+**5️⃣ AI Analysis**
+
+Amazon Bedrock interprets user queries and retrieves relevant logs.
+
+**6️⃣ Insight Generation**
+
+The platform generates:
+
+- Root cause analysis
+- Incident timelines
+- Dynamic dashboards
+- Fix recommendations
+
+---
 
 ### Log Pipeline
 
-Service Logs → Kinesis Firehose → Lambda Processing →  
-Normalization → OpenSearch + DynamoDB → AI Analysis
+```
+Service Logs
+   ↓
+Kinesis Firehose
+   ↓
+AWS Lambda Processing
+   ↓
+Log Normalization
+   ↓
+OpenSearch + DynamoDB
+   ↓
+AI Analysis (Amazon Bedrock)
+   ↓
+Dynamic Insights & Dashboards
+```
 
 ---
 
-## 🛠️ Technology Stack
+# 🛠️ Tech Stack
 
-**Frontend**
-- React + TypeScript  
-- AWS Amplify  
+## Frontend
+- React
+- TypeScript
+- Vite
+- Tailwind CSS
+- shadcn-ui
 
-**Backend**
-- Flask on AWS Lambda  
-- API Gateway  
+## Backend
+- Flask
+- AWS Lambda
+- API Gateway
 
-**AI & Intelligence**
-- Amazon Bedrock  
-- Amazon Q  
+## AI & Intelligence
+- Amazon Bedrock
+- Amazon Q
 
-**Data & Logs**
-- Amazon OpenSearch  
-- DynamoDB  
-- Kinesis Firehose  
+## Data & Observability
+- Amazon OpenSearch
+- DynamoDB
+- Kinesis Firehose
 
-**Authentication**
-- AWS Cognito  
+## Authentication
+- AWS Cognito
 
----
-
-## 🎯 Use Cases
-
-- Debugging distributed microservices  
-- Incident investigation  
-- Performance bottleneck analysis  
-- Deployment issue correlation  
-- Operational analytics  
+## Deployment
+- AWS Amplify
 
 ---
 
-## 💰 Estimated Implementation Cost
+# 📂 Project Setup
 
-Approximate monthly infrastructure cost for a medium-scale deployment:
+Clone the repository:
+
+```bash
+git clone <YOUR_GIT_URL>
+```
+
+Navigate to the project folder:
+
+```bash
+cd <PROJECT_NAME>
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start development server:
+
+```bash
+npm run dev
+```
+
+---
+
+# 🎯 Use Cases
+
+LogSense AI can be used for:
+
+- Debugging distributed microservices
+- Incident investigation
+- Performance bottleneck detection
+- Deployment issue tracking
+- Operational analytics
+
+---
+
+# 💰 Estimated Infrastructure Cost
 
 | Service | Estimated Monthly Cost |
-|--------|------------------------|
-Amazon Bedrock | $180  
-OpenSearch | $120  
-Lambda | $12  
-Kinesis Firehose | $35  
-DynamoDB | $15  
-Amplify Hosting | $20  
+|--------|-----------------------|
+| Amazon Bedrock | $180 |
+| OpenSearch | $120 |
+| Lambda | $12 |
+| Kinesis Firehose | $35 |
+| DynamoDB | $15 |
+| Amplify Hosting | $20 |
 
-**Total ≈ $382/month**
-
----
-
-## 🌍 Impact
-
-By removing the need for manual queries and fragmented dashboards, this platform:
-- Integration with Amazon Q
-- Reduces debugging time  
-- Improsves productivity of engineering teams  
-- Enables faster incident resolution  
-- Makes observability accessible to non-experts  
+**Total Estimated Cost:** ~$382/month
 
 ---
 
+# 🌍 Impact
 
-## 🔮 Future Scope
+LogSense AI helps organizations:
 
-- Predictive incident detection  
-- Automated remediation workflows  
-- Multi-region deployment  
-- Integration with CI/CD pipelines  
-- Proactive alerts based on anomaly detection  
-
----
-
-## 👥 Team
-
-**Team Name:** Beff Jezos  
-**Team Leader:** Hiten Sirwani  
-**Team Members** Soham Yedgaonkar, Arya Pathak, Atharva Deshpande, Hiten Sirwani
+- Reduce debugging time
+- Improve developer productivity
+- Accelerate incident resolution
+- Make observability accessible to non-experts
 
 ---
 
-## 🏁 Conclusion
+# 🔮 Future Scope
 
-This project reimagines debugging as a conversation rather than a manual investigation process.
+Planned improvements include:
 
-By combining AI reasoning, log analytics, and autonomous visualization, the platform enables teams to understand complex systems faster and with far less effort.
+- Predictive incident detection
+- Automated remediation workflows
+- AI anomaly detection
+- CI/CD integration
+- Multi-region scalability
 
 ---
 
->>>>>>> 1d4a1823dbc665e43494e6f8d5eb7bb2f354fe9e
+# 👥 Team
+
+**Team Name:** Beff Jezos
+
+**Team Leader**  
+Hiten Sirwani  
+
+**Team Members**
+
+- Soham Yedgaonkar  
+- Arya Pathak  
+- Atharva Deshpande  
+- Hiten Sirwani  
+
+---
+
+# 🏁 Conclusion
+
+LogSense AI transforms debugging from a **manual investigation process** into a **conversational AI-powered experience**.
+
+By combining **AI reasoning, log analytics, and automated visualization**, the platform enables teams to understand complex systems faster and resolve incidents more efficiently.
+
+---
+
+⭐ If you found this project interesting, consider **starring the repository!**
