@@ -9,7 +9,7 @@ LogSense AI is an **AI-powered observability and debugging platform** designed t
 
 Instead of manually searching logs or writing complex queries, developers can simply **ask questions about system behavior**, and the platform will automatically analyze logs, identify issues, and generate actionable insights.
 
-> ⚡ Transform debugging from **manual investigation → conversational observability**
+#⚡ Transform debugging from **manual investigation → conversational observability**
 
 ---
 
@@ -18,7 +18,7 @@ Instead of manually searching logs or writing complex queries, developers can si
 🔗 **Project URL**
 
 ```
-[http://100.48.76.239/]
+[http://100.48.76.239/](http://100.48.76.239/)
 ```
 
 ---
