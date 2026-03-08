@@ -313,7 +313,7 @@ LogSense AI helps organizations:
 
 Planned improvements include:
 
--Planned integration with Amazon Q to deliver AI-assisted debugging directly within the AWS ecosystem.
+- Planned integration with Amazon Q to deliver AI-assisted debugging directly within the AWS ecosystem.
 - Predictive incident detection
 - Automated remediation workflows
 - AI anomaly detection
