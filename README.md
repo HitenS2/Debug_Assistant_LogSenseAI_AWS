@@ -27,7 +27,7 @@ http://100.48.76.239/
 
 ## 🧪 Product Prototype Demo
 
-*(Add your product demo video here)*
+
 
 [![Watch the Demo](https://img.youtube.com/vi/VIDEO_ID/maxresdefault.jpg)](https://youtu.be/VIDEO_ID)
 
@@ -35,7 +35,7 @@ http://100.48.76.239/
 
 ## 🏗️ Architecture Explanation Video
 
-*(Add your architecture explanation video here)*
+
 
 [![Watch the Architecture Video](https://img.youtube.com/vi/AtXVfOwmeBE/maxresdefault.jpg)](https://youtu.be/AtXVfOwmeBE)
 
