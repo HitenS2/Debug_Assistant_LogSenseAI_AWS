@@ -51,7 +51,7 @@ http://100.48.76.239/
 
 ## AI Debugging Chat Interface
 
-![AI Chat Screenshot](./screenshots/chat-interface.png)
+![AI Chat Screenshot](ChatInter.png)
 
 ---
 
