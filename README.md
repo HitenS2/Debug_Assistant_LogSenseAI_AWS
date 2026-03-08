@@ -18,7 +18,7 @@ Instead of manually searching logs or writing complex queries, developers can si
 🔗 **Project URL**
 
 ```
-[http://100.48.76.239/](http://100.48.76.239/)
+http://100.48.76.239/
 ```
 
 ---
